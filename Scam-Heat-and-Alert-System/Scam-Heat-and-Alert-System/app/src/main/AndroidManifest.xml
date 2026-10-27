@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Internet -->
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <!-- Location -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <!-- Storage -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MANAGE_EXTERNAL_STORAGE" />
+
+    <!-- Android 13+ Notifications -->
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.ScamHeat">
+
+        <!-- Google Maps API Key -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="${MAPS_API_KEY}" />
+
+        <!--Firebase Message-->
+        <activity
+            android:name=".SplashActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity>
+        <!-- Main Activity -->
+        <activity
+            android:name=".MainActivity"
+            android:exported="false" />
+
+        <!-- Profile -->
+        <activity
+            android:name=".Profile"
+            android:exported="false" />
+
+        <!-- Report Scam -->
+        <activity
+            android:name=".ReportScam"
+            android:exported="false" />
+
+        <!-- Scam Check -->
+        <activity
+            android:name=".ScamCheck"
+            android:exported="false" />
+
+        <!-- Register -->
+        <activity
+            android:name=".Register"
+            android:exported="false" />
+
+        <!-- Scam Intelligence -->
+        <activity
+            android:name=".ScamIntelligence"
+            android:exported="false" />
+
+        <!-- Google Maps -->
+        <activity
+            android:name=".MapActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".AdminDashboard"
+            android:exported="false" />
+
+        <activity
+            android:name=".ReportVerification"
+            android:exported="false" />
+
+        <activity
+            android:name=".ScamStatistics"
+            android:exported="false" />
+
+        <activity
+            android:name=".EditProfile"
+            android:exported="false" />
+
+        <activity
+            android:name=".UserManagement"
+            android:exported="false" />
+
+        <!-- Login / Launcher -->
+        <activity
+            android:name=".Login"
+            android:exported="true"
+            android:windowSoftInputMode="adjustResize">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity>
+
+    </application>
+
+</manifest>

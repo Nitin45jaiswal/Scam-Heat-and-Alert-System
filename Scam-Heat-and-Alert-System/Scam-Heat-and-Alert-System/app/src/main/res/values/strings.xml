@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">ScamHeat</string>
+    <string name="supabase_url">https://zipwprhydylemjlamlos.supabase.co</string>
+    <string name="supabase_publishable_key">sb_publishable_pP8GC04B2R5wmH5o8K2fww_edjkgXXP</string>
+</resources>

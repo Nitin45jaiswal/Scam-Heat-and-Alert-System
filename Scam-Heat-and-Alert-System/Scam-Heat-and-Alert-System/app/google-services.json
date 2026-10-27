@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "71976228178",
+    "project_id": "scam-heat-and-alert-system",
+    "storage_bucket": "scam-heat-and-alert-system.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:71976228178:android:2d16f7f23f82089e30168b",
+        "android_client_info": {
+          "package_name": "com.example.scamheat"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDkZ6OnQl__MQ81-cHWFXxNJ26f2cqrRUw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
